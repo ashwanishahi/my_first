@@ -7,6 +7,11 @@ resource "azurerm_resource_group" "bhola" {
   name     = "bhola-rg"
   location = "Central India"
 }
+resource "azurerm_resource_group" "aki" {
+  name     = "aki-rg"
+  location = "Central India"
+}
+
 
 resource "azurerm_storage_account" "stg1234" {
     depends_on = [ azurerm_resource_group.dholu ]
